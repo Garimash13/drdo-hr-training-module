@@ -1,0 +1,17 @@
+.rejected-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.rejected-table th,
+.rejected-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.rejected-table th {
+  background-color: #004080;
+  color: white;
+}

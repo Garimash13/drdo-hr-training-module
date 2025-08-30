@@ -1,0 +1,92 @@
+/* CompletedInternships.css */
+
+/* Page wrapper */
+.completed-internships {
+  padding: 30px;
+  background: linear-gradient(135deg, #f0f6ff, #e6eefc);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Title */
+.completed-internships > h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #1a237e;
+  margin-bottom: 30px;
+}
+
+/* Section wrapper */
+.internship-section {
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* ✅ Project Report Submitted header */
+.internship-section h3[data-icon="✅"] {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0a3d91;
+  background: #e8f2ff; /* light blue */
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* ❌ Project Report Not Submitted header */
+.internship-section h3[data-icon="❌"] {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #c62828;
+  background: #fceaea; /* light red tint */
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* Icon space */
+.internship-section h3::before {
+  content: attr(data-icon);
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+/* Card grid */
+.intern-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Pure white cards */
+.intern-card {
+  background: #ffffff !important;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.intern-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Card text */
+.intern-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #222; /* black-ish text */
+}
+
+/* Labels bold & dark */
+.intern-card strong {
+  color: #000;
+}

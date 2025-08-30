@@ -1,0 +1,77 @@
+.home-container {
+  position: relative;
+  height: 100vh;
+  background-image: url('../assets/drdo-background.png');
+  background-size: cover;
+  background-position: center;
+  animation: zoomEffect 10s infinite ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Zoom animation */
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Move entire content slightly upward */
+.overlay {
+  transform: translateY(-80px); /* Adjust this value as needed */
+}
+
+.home-container h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.9), 0 0 20px rgba(0, 255, 255, 0.7);
+  margin-bottom: 40px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Glow effect */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  }
+  to {
+    text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+  }
+}
+
+.login-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.login-buttons button {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-buttons button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.6);
+}
+
+

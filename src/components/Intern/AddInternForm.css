@@ -1,0 +1,93 @@
+.form-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+.intern-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+input[type="file"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+  resize: vertical;
+}
+
+textarea {
+  min-height: 60px;
+}
+
+.required {
+  color: red;
+}
+
+.submit-btn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  align-self: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #005f87;
+}
+.photo-preview {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 10px;
+  box-shadow: none; /* Remove floating effect */
+  display: block;
+  margin-left: 0; /* Aligns it with the left of the input */
+}
+
+
+
+

@@ -1,0 +1,25 @@
+.intern-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.intern-card {
+  background-color: #e6f0ff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.complete-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.complete-btn:hover {
+  background-color: #218838;
+}

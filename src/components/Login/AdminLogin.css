@@ -1,0 +1,112 @@
+/* ===== Background Setup ===== */
+.admin-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../../assets/mentor-bg.png');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Glassmorphism Card ===== */
+.login-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 2.5rem;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.8s ease-in-out;
+  transform: perspective(1000px) rotateX(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.login-box:hover {
+  transform: perspective(1000px) rotateX(2deg);
+}
+
+/* ===== Heading ===== */
+.login-box h2 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-shadow: 0 0 8px #00f7ff, 0 0 15px #00f7ff;
+}
+
+/* ===== Labels ===== */
+.login-box label {
+  display: block;
+  text-align: left;
+  margin: 0.8rem 0 0.3rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ===== Inputs ===== */
+.login-box input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+  padding: 0 0.8rem;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3);
+  transition: 0.3s;
+}
+
+.login-box input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.login-box input:focus {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 8px #00f7ff;
+}
+
+/* ===== Button ===== */
+.login-box button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.8rem;
+  background: linear-gradient(135deg, #00f7ff, #0077ff);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00f7ff, 0 0 20px #0077ff;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  box-shadow: 0 0 20px #00f7ff, 0 0 40px #0077ff;
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+  .login-box {
+    width: 90%;
+    padding: 2rem;
+  }
+}

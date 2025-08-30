@@ -1,0 +1,100 @@
+.completed-interns-container {
+  padding: 20px;
+}
+
+.intern-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.intern-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.certified {
+  border: 2px solid #4caf50;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border: none;
+  background: #00a2ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0088d6;
+}
+
+/* Popup overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fancy popup */
+.fancy-popup {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 162, 255, 0.6),
+    0 0 30px rgba(0, 162, 255, 0.4);
+  animation: popIn 0.3s ease-out;
+  transform: scale(1.05);
+  width: 350px;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+.confirm-btn {
+  background: #00a2ff;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00a2ff;
+  transition: 0.2s;
+}
+
+.confirm-btn:hover {
+  background: #0088d6;
+  box-shadow: 0 0 15px #00a2ff, 0 0 25px #00a2ff;
+}
+
+.cancel-btn {
+  background: #ff5c5c;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+

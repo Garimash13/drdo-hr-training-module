@@ -1,0 +1,135 @@
+.assign-mentor-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(145deg, #f2f2f2, #ffffff);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.assign-mentor-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+.mentor-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.mentor-table th,
+.mentor-table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.mentor-table th {
+  background-color: #4a90e2;
+  color: white;
+  font-weight: 600;
+}
+
+.mentor-table tr:hover {
+  background-color: #f0f8ff;
+}
+
+.mentor-select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  transition: all 0.3s ease-in-out;
+}
+
+.mentor-select:hover {
+  border-color: #4a90e2;
+}
+
+.view-btn {
+  padding: 6px 12px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.view-btn:hover {
+  background-color: #45a049;
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  width: 450px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #333;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 10px;
+}
+
+.modal-content p {
+  margin: 10px 0;
+  line-height: 1.4;
+  font-size: 15px;
+  color: #555;
+}
+
+.close-btn {
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #f44336;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #d32f2f;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
